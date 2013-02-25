@@ -46,11 +46,11 @@
               %li
                 .btn-group
                   %a(class="btn" style="width: 7em;" ng-click="previousDay()")
-                    %i(class="icon-arrow-left")
+                    &#8592;
                     &nbsp;Précédent
                   %a(class="btn" style="width: 7em;" ng-click="nextDay()")
                     Suivant &nbsp;
-                    %i(class="icon-arrow-right")
+                    &#8594;
               %li.nav-header Evénements Paris le {{currentDateFormatted()}}
               %li(ng-repeat="event in events")
                 %a(ng-click="setCurrent($index)" href="#") {{event.starts_at}} - {{event.title}}
