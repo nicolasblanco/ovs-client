@@ -4,7 +4,7 @@ ruby "2.0.0"
 
 gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem "thin"
+gem "puma"
 
 gem "pry-rails"
 gem 'sass-rails',   :git => 'git://github.com/rails/sass-rails.git'
