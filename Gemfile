@@ -6,6 +6,8 @@ gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem "puma"
 
+gem "rails_config"
+
 gem "pry-rails"
 gem 'sass-rails',   :git => 'git://github.com/rails/sass-rails.git'
 gem "haml-rails"

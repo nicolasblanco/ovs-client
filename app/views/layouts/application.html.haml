@@ -17,9 +17,11 @@
     %link(href="favicon.ico" rel="shortcut icon")
     = javascript_include_tag "https://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js"
     = javascript_include_tag "https://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular-resource.min.js"
+
     = javascript_include_tag "application"
 
     :javascript
+      window.apiHost = "#{Settings.api.host}";
       window.currentDate = moment();
 
   %body
@@ -52,6 +54,7 @@
                     Suivant &nbsp;
                     &#8594;
               %li.nav-header Evénements Paris le {{currentDateFormatted()}}
+              %li(ng-hide="events.length") Loading...
               %li(ng-repeat="event in events")
                 %a(ng-click="setCurrent($index)" href="#") {{event.starts_at}} - {{event.title}}
 

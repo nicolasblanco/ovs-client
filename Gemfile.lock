@@ -128,6 +128,8 @@ GEM
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
+    rails_config (0.3.2)
+      activesupport (>= 3.0)
     rake (10.0.3)
     rdoc (3.12.1)
       json (~> 1.4)
@@ -170,6 +172,7 @@ DEPENDENCIES
   pry-rails
   puma
   rails!
+  rails_config
   sass-rails!
   sprockets-rails
   therubyracer
